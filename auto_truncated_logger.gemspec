@@ -4,8 +4,8 @@ require File.expand_path('../lib/auto_truncated_logger/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["SHIBATA Hiroshi"]
   gem.email         = ["shibata.hiroshi@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = "logger of auto truncated old file."
+  gem.summary       = "AutoTruncatedLogger is a auto truncate old logfile. if you always attension to Rails log file, should use this gem."
   gem.homepage      = "https://github.com/hsbt/auto_truncated_logger"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
