@@ -8,8 +8,8 @@ class AutoTruncatedLogger < Logger
     super(device, 1, shift_size)
   end
 
-  def add(severity, message = nil, progname = nil, &block)
-    super(severity, message, progname, &block)
+  def add(*args)
+    super(*args)
     truncate_old_file
   end
 
