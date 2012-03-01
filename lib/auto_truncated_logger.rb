@@ -1,8 +1,9 @@
-require "auto_truncated_logger/version"
 require 'fileutils'
 require 'logger'
 
 class AutoTruncatedLogger < Logger
+  VERSION = "0.0.1"
+
   def initialize(device, shift_size = 1048576)
     super(device, 1, shift_size)
   end
