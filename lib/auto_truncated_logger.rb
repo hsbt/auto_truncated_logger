@@ -2,7 +2,7 @@ require 'fileutils'
 require 'logger'
 
 class AutoTruncatedLogger < Logger
-  VERSION = "0.0.2"
+  VERSION = "0.0.3"
 
   def initialize(device, shift_size = 1048576)
     super(device, 1, shift_size)
